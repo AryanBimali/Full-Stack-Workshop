@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #263b80;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav {
+  background-color: #1b2d63;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: lightblue;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin: 25px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #263b80;
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+figure {
+  background-color: #eef0f8;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+figure img {
+  width: 100%;
+  max-width: 180px;
+  height: 130px;
+  object-fit: contain;
+}
+
+figcaption {
+  color: #263b80;
+  font-weight: bold;
+}
+
+aside {
+  background-color: #e1e7fa;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+aside h2 {
+  color: #263b80;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  padding-left: 20px;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+article li a {
+  color: #263b80;
+  text-decoration: none;
+}
+
+article li a:hover {
+  color: #5576e3;
+}
+
+video {
+  width: 100%;
+  margin-top: 10px;
+  height: 400px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background-color: #1b2d63;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    margin: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  aside {
+    padding: 15px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
